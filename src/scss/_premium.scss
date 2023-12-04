@@ -1,0 +1,209 @@
+.premium {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        position: relative;
+        width: 54.4rem;
+        height: 73.5rem;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 18.5rem;
+            height: 6rem;
+            background-color: $lightBrown;
+            z-index: -1;
+        }
+
+        &::before {
+            top: -2rem;
+            left: -2rem;
+        }
+
+        &::after {
+            right: -2rem;
+            bottom: -2rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__descr {
+        width: 55.5rem;
+        display: flex;
+        flex-direction: column;
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4.4rem;
+        }
+
+        &_diamond {
+            margin-top: 1.3rem;
+            width: 10.6rem;
+            height: 9.9rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &_title {
+            color: $grey;
+            font-size: 4.4rem;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.1rem;
+            width: 41.5rem;
+        }
+
+        &-body {
+            margin-bottom: 6.4rem;
+
+            p {
+                color: $grey;
+                font-size: 2.4rem;
+                font-weight: 500;
+                line-height: 3.12rem; /* 130% */
+
+                &:last-child {
+                    color: $lightBrown;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 5rem;
+                }
+            }
+        }
+
+        &-bottom {
+            position: relative;
+            width: 42.6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 5rem;
+                left: 11.8rem;
+                width: 12rem;
+                height: 0.1rem;
+                background-color: $lightBrown;
+            }
+        }
+
+        &_rate {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 10rem;
+            background-color: $lightBiege;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $grey;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 3.12rem; /* 130% */
+        }
+
+        &_rate-text {
+            color: $grey;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 3.12rem; /* 130% */
+            width: 17rem;
+        }
+    }
+
+    @media (max-width: 48em) {
+        margin-bottom: 24.4rem;
+
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__descr {
+            position: relative;
+            width: auto;
+            margin-bottom: 10.4rem;
+
+            &_diamond {
+                position: absolute;
+                right: -15.4rem;
+                bottom: 21rem;
+                width: 24.8rem;
+                height: 23rem;
+            }
+
+            &_title {
+                font-size: 7.2rem;
+                font-weight: 500;
+                line-height: 140%; /* 10.08rem */
+                letter-spacing: 0.2rem;
+                margin-bottom: 4rem;
+                width: auto;
+            }
+
+            &-body {
+                margin-bottom: 8rem;
+
+                p {
+                    font-size: 4rem;
+                    font-weight: 500;
+                    line-height: 5.2rem; /* 130% */
+
+                    &:not(:last-child) {
+                        margin-bottom: 4rem;
+                    }
+
+                    &:last-child {
+                        width: 56rem;
+                    }
+                }
+            }
+
+            &-bottom {
+                width: auto;
+
+                &::before {
+                    width: 20.6rem;
+                    top: 6.2rem;
+                    left: 16rem;
+                }
+            }
+
+            &_rate {
+                width: 12.4rem;
+                height: 12.4rem;
+                border-radius: 20rem;
+                font-size: 4rem;
+                font-weight: 500;
+                line-height: 5.2rem; /* 130% */
+            }
+
+            &_rate-text {
+                font-size: 4rem;
+                font-weight: 500;
+                line-height: 5.2rem; /* 130% */
+                width: 28.4rem;
+            }
+        }
+
+        &__img {
+            width: 63.8rem;
+            height: 86.2rem;
+            margin: 0 auto;
+        }
+    }
+}

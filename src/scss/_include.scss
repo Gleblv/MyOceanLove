@@ -1,0 +1,246 @@
+.include {
+    position: relative;
+    margin-bottom: 22.4rem;
+
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        color: $grey;
+        text-align: center;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 4.4rem;
+    }
+
+    &__tabs {
+        display: flex;
+        column-gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6.4rem;
+    }
+
+    &__tab {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+
+        &.active {
+            padding-left: 3.1rem;
+            padding-right: 3.1rem;
+            border: 1px solid $lightBrown;
+        }
+    }
+
+    &__slider-mobile {
+        display: none;
+
+        &.active {
+            display: none;
+        }
+    }
+
+    &__slider-desktop {
+        position: relative;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .include__swiper {
+            &-slide {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &_number {
+                    color: $grey;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-bottom: 2.4rem;
+                }
+
+                &_img {
+                    width: 28.8rem;
+                    height: 34rem;
+                    margin-bottom: 2.7rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &_text {
+                    color: $grey;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                &_column-big {
+                    position: relative;
+
+                    .include__swiper-slide_img {
+                        width: 39rem;
+                        height: 46rem;
+                        margin: 0;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .include__swiper-slide_text {
+                        position: absolute;
+                        right: 2rem;
+                        bottom: 2rem;
+                        z-index: 2;
+                        color: $white;
+                        font-size: 2rem;
+                        font-weight: 500;
+                        line-height: normal;
+                        padding: 1rem 1.6rem;
+                        background: rgba(255, 255, 255, 0.30);
+                        backdrop-filter: blur(6.050000190734863px);
+                    }
+                }
+            }
+        }
+    }
+
+    .include__swiper-controlls {
+        position: absolute;
+        bottom: -5.4rem;
+        left: 35.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        width: 121rem;
+
+        .include__swiper-prev,
+        .include__swiper-next {
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 48em) {
+        margin-bottom: 22rem;
+
+        &__title {
+            color: $grey;
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 4rem;
+        }
+
+        &__tabs-container {
+            width: 68.6rem;
+            overflow-x: scroll;
+            margin-bottom: 8rem;
+        }
+
+        &__tabs {
+            width: 100%;
+            margin: 0;
+            margin-left: 42rem;
+        }
+
+        &__tab {
+            text-wrap: nowrap;
+            color: $grey;
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 5.2rem; /* 130% */
+            padding-top: 2.2rem;
+            padding-bottom: 2.2rem;
+
+            &.active {
+                padding: 2.2rem 3rem 2.2rem 3rem;
+            }
+        }
+
+        &__slider-desktop {
+            &.active {
+                display: none;
+            }
+        }
+
+        &__slider-mobile {
+            display: none;
+
+            &.active {
+                display: block;
+                height: 80.4rem;
+            }
+
+            .include__swiper {
+                height: 80.4rem;
+
+                &-slide {
+                    width: 54rem;
+
+                    &_img {
+                        width: 52rem;
+                        height: 60rem;
+                        margin-bottom: 5.6rem;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    &_number {
+                        color: $grey;
+                        font-size: 4rem;
+                        font-weight: 500;
+                        line-height: 5.2rem; /* 130% */
+                        margin-bottom: 4.4rem;
+                    }
+
+                    &_text {
+                        color: $grey;
+                        font-size: 4rem;
+                        font-weight: 500;
+                        line-height: 5.2rem; /* 130% */
+                    }
+                }
+
+                .swiper-slide-active {
+                    .include__swiper-slide_img {
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            background-color: $lightBrown;
+                            position: absolute;
+                            right: -2rem;
+                            bottom: -2rem;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .include__swiper-controlls {
+            width: 68.6rem;
+            left: 3.2rem;
+        }
+    }
+}

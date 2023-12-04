@@ -1,0 +1,122 @@
+.preparation {
+    padding: 17rem 0 19rem 0;
+    background-color: $biege;
+    margin-bottom: 17rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__descr {
+        width: 47.5rem;
+    }
+
+    &__title {
+        color: $grey;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.12rem; /* 130% */
+        margin-bottom: 4rem;
+    }
+
+    &__img {
+        position: relative;
+        width: 56.4rem;
+        height: 69rem;
+
+        &-flower {
+            position: absolute;
+            right: -3.73rem;
+            bottom: -5.7rem;
+            width: 16.9rem;
+            height: 22.8rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: -2rem;
+            bottom: -2rem;
+            width: 100%;
+            height: 100%;
+            background-color: $lightBrown;
+            z-index: -1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .button {
+        background-image: none;
+        padding: 1.8rem 4.2rem;
+    }
+
+    @media (max-width: 48em) {
+        padding: 22rem 0 24.4rem 0;
+        margin-bottom: 26.8;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__descr {
+            width: auto;
+            margin-bottom: 8rem;
+        }
+
+        &__title {
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 2.4rem;
+        }
+
+        &__text {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 5.2rem; /* 130% */
+            margin-bottom: 5.6rem;
+        }
+
+        &__img {
+            width: 69.4rem;
+            height: 72rem;
+            margin-left: -5.2rem;
+
+            &-flower {
+                width: 15.7922rem;
+                height: 21.3054rem;
+                bottom: -7.7rem;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &::before {
+                right: -2.4rem;
+                bottom: -2.4rem;
+            }
+        }
+
+        .button {
+            padding: 3.6rem 9.6rem;
+        }
+    }
+}

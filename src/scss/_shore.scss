@@ -1,0 +1,115 @@
+.shore {
+    background-color: $biege;
+    padding-bottom: 56.5rem;
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__descr {
+        width: 42.4rem;
+    }
+
+    &__img {
+        width: 58.4rem;
+        height: 77.5rem;
+        margin-top: -17rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        color: $grey;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.12rem; /* 130% */
+    }
+
+    &__img-small {
+        position: absolute;
+        left: 33.1rem;
+        bottom: -39.5rem;
+        width: 29.5rem;
+        height: 29.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__shell {
+        position: absolute;
+        bottom: -46.3rem;
+        right: 2.7rem;
+        width: 38.3rem;
+        height: 33.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding: 22rem 0 22rem 0;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__descr {
+            width: auto;
+            margin-bottom: 5.6rem;
+        }
+
+        &__title {
+            color: $grey;
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 2.4rem;
+            width: 45rem;
+        }
+
+        &__text {
+            color: $grey;
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 5.2rem; /* 130% */
+        }
+
+        &__img {
+            margin: 0;
+            width: 68.6rem;
+            height: 56rem;
+        }
+
+        &__img-small {
+            display: none;
+        }
+
+        &__shell {
+            width: 31.2rem;
+            height: 27.4rem;
+            top: 0;
+            bottom: calc(100% - 27.4rem)
+        }
+    }
+}

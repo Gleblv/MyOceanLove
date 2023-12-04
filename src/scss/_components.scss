@@ -5,6 +5,7 @@ $darkRed: #2E0408;
 $lightBrown: #CCA870;
 $grey: #3C3C3B;
 $biege: rgba(204, 168, 112, 0.20);
+$lightBiege: #F5EEE2;
 
 .button {
     font-family: 'ProximaNova-Regular',Arial,sans-serif;
@@ -26,5 +27,21 @@ $biege: rgba(204, 168, 112, 0.20);
         padding: 3.6rem 9rem;
         background-image: none;
         font-size: 4rem;
+    }
+}
+
+.slider-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.4rem;
+
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        background-color: rgba(204, 168, 112, 0.30);
+
+        &-active {
+            background-color: $lightBrown;
+        }
     }
 }
