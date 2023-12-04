@@ -1,0 +1,62 @@
+.ideas {
+    position: relative;
+    margin-bottom: 17rem;
+
+    &__title {
+        color: $grey;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1rem;
+        margin-bottom: 4.4rem;
+    }
+
+    &__swiper {
+        margin-left: -41rem;
+        width: 162rem;
+
+        &-slide {
+            width: 39rem;
+            height: 60rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-controlls {
+            position: absolute;
+            top: calc(50% + 1rem);
+            right: 10rem;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 48em) {
+        margin-bottom: 22rem;
+
+        &__title {
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 8rem;
+            text-align: center;
+        }
+
+        &__swiper {
+            margin-left: -3.2rem;
+            width: 75rem;
+
+            &-slide {
+                width: 40rem;
+                height: 54rem;
+            }
+
+            &-controlls {
+                display: none;
+            }
+        }
+    }
+}

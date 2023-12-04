@@ -1,0 +1,75 @@
+.budget {
+    position: relative;
+    margin-bottom: 11rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__descr {
+        width: 37.7rem;
+    }
+
+    &__title {
+        color: $grey;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 5.2rem; /* 130% */
+        margin-bottom: 1.9rem;
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.12rem; /* 130% */
+        margin-bottom: 5.42rem;
+    }
+
+    &__img {
+        width: 58.8rem;
+        height: 62.8rem;
+    }
+
+    .button {
+        width: 33rem;
+        background-image: url(../img/svg/wallet.svg);
+        text-align: center;
+        background-position-y: center;
+    }
+
+    @media (max-width: 48em) {
+        margin-bottom: 22rem;
+
+        &__descr {
+            width: auto;
+        }
+
+        &__title {
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 2.4rem;
+        }
+
+        &__text {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 5.2rem; /* 130% */
+            margin-bottom: 5.6rem;
+        }
+
+        .button {
+            width: 100%;
+            background-image: none;
+            text-align: left;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+}

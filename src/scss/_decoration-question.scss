@@ -1,0 +1,106 @@
+.decoration-question {
+    position: relative;
+    margin-bottom: 17rem;
+    padding: 14.5rem 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img {
+        width: 42rem;
+        height: 40rem;
+        margin-left: 20.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__descr {
+        width: 47.5rem;
+    }
+
+    &__title {
+        color: $grey;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.12rem; /* 130% */
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 64.3rem;
+        height: 69rem;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 64.3rem);
+        height: 100%;
+        background-color: $biege;
+        z-index: -1;
+    }
+
+    @media (max-width: 48em) {
+        padding: 22rem 0 48.6rem 0;
+        margin-bottom: 22rem;
+
+        &__container {
+            flex-direction: column-reverse;
+            row-gap: 8rem;
+        }
+
+        &__img {
+            margin: 0;
+            width: 44rem;
+            height: 42rem;
+        }
+
+        &__descr {
+            width: auto;
+        }
+
+        &__title {
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 2.4rem;
+        }
+
+        &__text {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 5.2rem; /* 130% */
+        }
+
+        &__background {
+            top: calc(100% - 76.6rem);
+            width: 75rem;
+            height: 76.6rem;
+        }
+
+        &::after {
+            width: 100%;
+        }
+    }
+}

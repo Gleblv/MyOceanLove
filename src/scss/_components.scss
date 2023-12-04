@@ -1,0 +1,30 @@
+// colors
+
+$white: #fff;
+$darkRed: #2E0408;
+$lightBrown: #CCA870;
+$grey: #3C3C3B;
+$biege: rgba(204, 168, 112, 0.20);
+
+.button {
+    font-family: 'ProximaNova-Regular',Arial,sans-serif;
+    color: $white;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1.9rem 3.2rem 1.7rem 8.4rem;
+    background-image: url('../img/svg/button-list.svg');
+    background-position: 2.2rem 1rem;
+    background-repeat: no-repeat;
+    background-size: 3rem 4rem;
+    background-color: $lightBrown;
+    box-shadow: 0px 2px 25px -7px $lightBrown;
+    display: inline-block;
+    cursor: pointer;
+
+    @media (max-width: 48em) {
+        padding: 3.6rem 9rem;
+        background-image: none;
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,57 @@
+.decoration-hero {
+    position: relative;
+    height: 95.5rem;
+    padding-top: 26.8rem;
+    margin-bottom: 0;
+
+    &__title {
+        color: $white;
+        text-shadow: 4px 4px 19px $darkRed;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 7.8rem; /* 130% */
+        width: 41.6rem;
+        margin-bottom: 4.4rem;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 48em) {
+        height: 120rem;
+        padding-top: 18.4rem;
+        padding-bottom: 3.2rem;
+        margin-bottom: 22rem;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        &__title {
+            width: 68.6rem;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 7.2rem;
+            line-height: 140%; /* 10.08rem */
+        }
+
+        &__button {
+            margin-top: auto;
+            padding: 3.6rem 7rem;
+        }
+    }
+}

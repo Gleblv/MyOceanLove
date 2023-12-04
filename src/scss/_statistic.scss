@@ -1,0 +1,60 @@
+.statistic {
+    padding: 17rem 0;
+    margin: 0;
+
+    &__container {
+        display: flex;
+        padding: 0 9.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__column {
+        text-align: center;
+        width: 20.1rem;
+    }
+
+    &__count {
+        color: $lightBrown;
+        font-size: 10rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.12rem; /* 130% */
+        width: 19rem;
+    }
+
+    @media (max-width: 48em) {
+        padding: 22rem 0;
+
+        &__container {
+            padding: 0;
+            flex-direction: column;
+            row-gap: 8rem;
+            justify-content: center;
+        }
+
+        &__column {
+            width: auto;
+        }
+
+        &__count {
+            color: $lightBrown;
+            font-size: 12rem;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &__text {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 5.2rem; /* 130% */
+            width: auto;
+        }
+    }
+}
