@@ -24,6 +24,7 @@ const ideasSwiper = new Swiper(".ideas__swiper", {
          slidesPerView: 4,
          slidesPerGroup: 1,
          spaceBetween: 20,
+         centeredSlides: false,
       },
    },
 
