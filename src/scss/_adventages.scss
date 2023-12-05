@@ -1,0 +1,165 @@
+.adventages {
+    position: relative;
+    padding: 6.8rem 0 12.3rem 0;
+    margin-bottom: 33.1rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 45.8rem;
+        width: 80rem;
+        height: 74.5rem;
+        background-color: $biege;
+        z-index: -1;
+    }
+
+    &__row {
+        display: flex;
+
+        &:first-child {
+            margin-bottom: 6.8rem;
+
+            .adventages__img {
+                width: 35.2rem;
+                height: 42.6rem;
+                margin: -18.3rem 6.8rem 0 20.5rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .adventages__descr {
+                width: 38.4rem;
+            }
+        }
+
+        &:last-child {
+            justify-content: space-between;
+
+            .adventages__descr {
+                width: 28.4rem;
+            }
+        }
+    }
+
+    &__title {
+        color:  $grey;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.12rem; /* 130% */
+    }
+
+    &__line-text {
+        padding-top: 3.5rem;
+        display: flex;
+        column-gap: 4.2rem;
+        width: 69.2rem;
+        height: 6.3rem;
+        align-items: center;
+
+        .adventages__text {
+            width: 16.3rem;
+        }
+    }
+
+    &__line {
+        width: 48.7rem;
+        height: 0.1rem;
+        background-color: $lightBrown;
+    }
+
+    &__img-2 {
+        position: absolute;
+        right: 56rem;
+        bottom: -16.7rem;
+        width: 59.5rem;
+        height: 36rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding: 22rem 0;
+        margin-bottom: 42.6rem;
+
+        &::before {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__row {
+            &:first-child {
+                margin-bottom: 8rem;
+
+                .adventages__img {
+                    position: absolute;
+                    right: 3.2rem;
+                    top: -22rem;
+                    width: 26.2rem;
+                    height: 34rem;
+                    margin: 0;
+                }
+
+                .adventages__descr {
+                    width: auto;
+                }
+            }
+
+            &:last-child {
+                flex-direction: column-reverse;
+
+                .adventages__descr {
+                    width: auto;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 7.2rem;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 4rem;
+        }
+
+        &__text {
+            font-size: 4rem;
+            line-height: 5.2rem; /* 130% */
+        }
+
+        &__line-text {
+            padding: 0;
+            margin: 0 0 8rem 0;
+            width: auto;
+            height: auto;
+            column-gap: 3.6rem;
+
+            .adventages__text {
+                width: 39rem;
+            }
+        }
+
+        &__img-2 {
+            width: 42.4rem;
+            height: 32.6rem;
+            right: 29.4rem;
+            bottom: -20.6rem;
+        }
+    }
+}

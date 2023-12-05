@@ -1,0 +1,131 @@
+.requirements {
+    position: relative;
+    background-color: $biege;
+    padding: 17rem 0;
+    margin-bottom: 28.5rem;
+
+    &__container {
+        padding-left: 62.5rem;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 91.2rem;
+        height: 99.7rem;
+
+        &-small {
+            position: absolute;
+            right: 0;
+            top: -22.5rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        width: 48.3rem;
+        color: $grey;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1rem;
+        margin-left: -16.5rem;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 6.4rem;
+    }
+
+    &__swiper {
+        width: 58.5rem;
+        
+        .swiper-wrapper {
+            margin-bottom: 6.4rem;
+        }
+
+        &-controlls {
+            display: flex;
+            column-gap: 4rem;
+            align-items: center;
+            justify-content: flex-end;
+
+            div {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        margin-left: 3.1rem;
+
+        &-item {
+            color: $grey;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 3.12rem; /* 130% */
+            padding-left: 1.8rem;
+    
+            &:not(:last-child) {
+                margin-bottom: 2.2rem;
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding: 22rem 0 76rem 0;
+        margin-bottom: 44rem;
+
+        &__container {
+            padding: 0 3.2rem;
+        }
+
+        &__title {
+            margin-left: 0;
+            font-size: 7.2rem;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 2.4rem;
+            width: auto;
+        }
+
+        &__swiper {
+            width: 68.6rem;
+
+            &-controlls {
+                display: none;
+            }
+        }
+
+        &__list {
+            margin-left: 4.6rem;
+
+            &-item {
+                font-size: 4rem;
+                line-height: 5.2rem; /* 130% */
+                padding-left: 2.4rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 1.6rem;
+                }
+            }
+        }
+
+        &__img {
+            width: 75rem;
+            height: 68rem;
+            
+            &-small {
+                width: 26.2rem;
+                height: 37.2rem;
+                right: 3.2rem;
+                top: -12rem;
+            }
+        }
+    }
+}

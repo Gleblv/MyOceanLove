@@ -1,0 +1,98 @@
+.hotels {
+    padding: 17rem 0 39.5rem 0;
+    margin: 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__descr {
+        width: 46.8rem;
+    }
+
+    &__title {
+        color: $grey;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.12rem; /* 130% */
+        margin-bottom: 4rem;
+    }
+
+    .button {
+        background-image: none;
+        padding: 1.8rem 4.2rem;
+    }
+
+    &__img {
+        position: relative;
+        width: 49.3rem;
+        height: 65.5rem;
+
+        &-small {
+            position: absolute;
+            left: -9.2rem;
+            top: 19.5rem;
+            width: 18.5rem;
+            height: 26.6rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding: 6rem 0 34rem 0;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__descr {
+            width: auto;
+            margin-bottom: 8.8rem;
+        }
+
+        &__title {
+            font-size: 7.2rem;
+            line-height: 140%; /* 10.08rem */
+            letter-spacing: 0.2rem;
+            margin-bottom: 2.4rem;
+        }
+
+        &__text {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 5.2rem; /* 130% */
+        }
+
+        .button {
+            display: none;
+        }
+
+        &__img {
+            width: 55.4rem;
+            height: 47.6rem;
+            align-self: flex-end;
+
+            &-small {
+                width: 22.8rem;
+                height: 27.6rem;
+                top: -3.2rem;
+                left: -13.2rem;
+            }
+        }
+    }
+}
