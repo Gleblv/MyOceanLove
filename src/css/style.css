@@ -1641,6 +1641,41 @@ section {
   background-image: url(../img/svg/wallet.svg);
   width: 32.4rem;
 }
+@media (max-width: 48em) {
+  .more__container {
+    padding: 0 3.2rem;
+  }
+  .more__img {
+    display: none;
+  }
+  .more__content {
+    width: 68.6rem;
+    height: auto;
+    padding: 8.4rem 7rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .more__title {
+    width: auto;
+    font-size: 7.2rem;
+    line-height: 140%; /* 10.08rem */
+    letter-spacing: 0.2rem;
+    margin-bottom: 2.4rem;
+  }
+  .more__text {
+    width: auto;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 5.2rem; /* 130% */
+    letter-spacing: 0.2rem;
+    margin-bottom: 5.6rem;
+  }
+  .more .button {
+    width: auto;
+    padding: 3.6rem 9.6rem;
+    background-image: none;
+  }
+}
 
 .hotels {
   padding: 17rem 0 39.5rem 0;
