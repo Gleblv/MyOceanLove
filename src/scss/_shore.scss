@@ -6,11 +6,11 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
     }
 
     &__descr {
         width: 42.4rem;
+        padding-top: 17rem;
     }
 
     &__img {
@@ -76,6 +76,7 @@
         &__descr {
             width: auto;
             margin-bottom: 5.6rem;
+            padding-top: 0rem;
         }
 
         &__title {

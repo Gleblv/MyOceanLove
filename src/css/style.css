@@ -828,10 +828,10 @@ section {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .shore__descr {
   width: 42.4rem;
+  padding-top: 17rem;
 }
 .shore__img {
   width: 58.4rem;
@@ -888,6 +888,7 @@ section {
   .shore__descr {
     width: auto;
     margin-bottom: 5.6rem;
+    padding-top: 0rem;
   }
   .shore__title {
     color: #3C3C3B;
@@ -1311,6 +1312,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 .premium__descr-bottom::before {
   content: "";
@@ -1423,6 +1425,7 @@ section {
 }
 .preparation__descr {
   width: 47.5rem;
+  padding-top: 17rem;
 }
 .preparation__title {
   color: #3C3C3B;
@@ -1480,6 +1483,7 @@ section {
   .preparation__descr {
     width: auto;
     margin-bottom: 8rem;
+    padding-top: 0rem;
   }
   .preparation__title {
     font-size: 7.2rem;
@@ -1524,11 +1528,30 @@ section {
 .example__text {
   color: #3C3C3B;
   text-align: center;
-  font-size: 4.4rem;
   font-weight: 500;
   line-height: 5.72rem; /* 130% */
   margin-bottom: 6.4rem;
   padding: 0 6.1rem;
+}
+.example__text p {
+  font-size: 4rem;
+}
+.example__text p:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.example__text ul {
+  font-size: 4rem;
+}
+.example__text ul:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.example__text ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.example__text .example__title {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
 }
 .example__swiper {
   width: 203rem;
