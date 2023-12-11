@@ -1235,6 +1235,9 @@ section {
   }
 }
 
+.premium {
+  overflow-x: hidden;
+}
 .premium__container {
   display: flex;
   justify-content: space-between;

@@ -1,4 +1,6 @@
 .premium {
+    overflow-x: hidden;
+
     &__container {
         display: flex;
         justify-content: space-between;
