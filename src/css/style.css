@@ -1531,19 +1531,20 @@ section {
 .example__text {
   color: #3C3C3B;
   text-align: center;
+  font-size: 2.4rem;
   font-weight: 500;
-  line-height: 5.72rem; /* 130% */
+  line-height: 3.12rem;
   margin-bottom: 6.4rem;
   padding: 0 6.1rem;
 }
 .example__text p {
-  font-size: 4rem;
+  font-size: 2.4rem;
 }
 .example__text p:not(:last-child) {
   margin-bottom: 8rem;
 }
 .example__text ul {
-  font-size: 4rem;
+  font-size: 2.4rem;
 }
 .example__text ul:not(:last-child) {
   margin-bottom: 8rem;
@@ -1552,9 +1553,10 @@ section {
   margin-bottom: 2rem;
 }
 .example__text .example__title {
-  font-size: 5rem;
+  font-size: 4.4rem;
   font-weight: 500;
   margin-bottom: 4rem;
+  line-height: normal;
 }
 .example__swiper {
   width: 203rem;
@@ -1586,9 +1588,28 @@ section {
   }
   .example__text {
     font-size: 4rem;
-    font-weight: 500;
-    line-height: 5.2rem; /* 130% */
+    line-height: 5.2rem;
     margin-bottom: 8rem;
+  }
+  .example__text p {
+    font-size: 4rem;
+  }
+  .example__text p:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .example__text ul {
+    font-size: 4rem;
+  }
+  .example__text ul:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .example__text ul li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .example__text .example__title {
+    font-size: 7.2rem;
+    line-height: 140%;
+    letter-spacing: 0.2rem;
   }
   .example__swiper {
     margin-left: -68rem;
